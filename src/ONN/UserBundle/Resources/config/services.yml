@@ -1,0 +1,7 @@
+parameters:
+#    onn_user.example.class: ONN\UserBundle\Example
+
+services:
+#    onn_user.example:
+#        class: %onn_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
