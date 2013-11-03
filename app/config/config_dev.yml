@@ -27,7 +27,3 @@ monolog:
 assetic:
     use_controller: true
 
-swiftmailer:
-    transport: gmail
-    username: Arnolfo@aesopgames.com
-    password: 1!~#1e~H.Drz
