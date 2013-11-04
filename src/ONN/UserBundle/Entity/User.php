@@ -46,6 +46,11 @@ class User extends BaseUser
      */
     protected $facebookId;
 
+    /**
+     * @ORM\Column(type="string", length=40, nullable=true)
+     */
+    protected $googleID;
+
     public function serialize()
     {
         return serialize(array($this->facebookId, parent::serialize()));
@@ -136,4 +141,14 @@ class User extends BaseUser
         }
     }
 
+    
+    public function setGoogleID( $googleID )
+    {
+        $this->googleID = $googleID;
+    }
+
+    public function getGoogleID( )
+    {
+        return $this->googleID;
+    }
 }

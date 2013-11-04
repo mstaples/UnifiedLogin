@@ -28,6 +28,13 @@ services:
             facebook: "@fos_facebook.api"
             userManager: "@fos_user.user_manager"
             validator: "@validator"
+    google.user:
+        class: ONN\UserBundle\Security\User\Provider\GoogleProvider
+        arguments:
+            google: @bit_google.api
+            userManager: @fos_user.user_manager
+            validator: @validator
+            em: @doctrine.orm.entity_manager
 
 # Twig Configuration
 twig:
@@ -96,3 +103,15 @@ fos_facebook:
     secret: %facebook_secret%
     cookie: true
     permissions: [email, user_birthday, user_location, user_games_activity, publish_actions]
+
+bit_google:
+    app_name: Brunelleschi
+    client_id: 11636103621.apps.googleusercontent.com
+    client_secret: 9_WD7D30yugXJwdHebFAUzvB
+    state: auth
+    access_type: online
+    scopes:
+       openid: [email, profile]
+       contact: true
+    approval_prompt: auto
+    callback_url: http://brunegame.com/login_check

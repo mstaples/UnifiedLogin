@@ -33,3 +33,7 @@ fos_facebook_channel:
 _facebook_secured:
     pattern: /secured/
     defaults: { _controller: AcmeDemoBundle:Welcome:index }
+
+_google_secured:
+    pattern: /secured/
+    defaults: { _controller: AcmeDemoBundle:Welcome:index }
