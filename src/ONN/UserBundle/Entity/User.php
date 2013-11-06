@@ -141,7 +141,7 @@ class User extends BaseUser
         }
     }
 
-    
+
     public function setGoogleID( $googleID )
     {
         $this->googleID = $googleID;

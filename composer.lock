@@ -49,17 +49,17 @@
         },
         {
             "name": "bitgandtter/google-bundle",
-            "version": "0.3.4",
+            "version": "0.3.7",
             "target-dir": "BIT/GoogleBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bitgandtter/GoogleBundle.git",
-                "reference": "c361bab357f012d0ff039d44c38be5811427e666"
+                "reference": "d740c16463850d58ec83ef3397f3ecc5f3a12fcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bitgandtter/GoogleBundle/zipball/c361bab357f012d0ff039d44c38be5811427e666",
-                "reference": "c361bab357f012d0ff039d44c38be5811427e666",
+                "url": "https://api.github.com/repos/bitgandtter/GoogleBundle/zipball/d740c16463850d58ec83ef3397f3ecc5f3a12fcf",
+                "reference": "d740c16463850d58ec83ef3397f3ecc5f3a12fcf",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 "google",
                 "user"
             ],
-            "time": "2013-10-15 18:48:52"
+            "time": "2013-11-05 19:16:25"
         },
         {
             "name": "doctrine/annotations",

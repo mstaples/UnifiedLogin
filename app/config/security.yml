@@ -10,7 +10,7 @@ security:
     providers:
         chain_provider:
             chain:
-                providers: [fos_userbundle, my_fos_facebook_provider]
+                providers: [fos_userbundle, my_fos_facebook_provider, google]
         fos_userbundle:
             id: fos_user.user_provider.username
         my_fos_facebook_provider:
@@ -24,14 +24,16 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_provider: form.csrf_provider
+                login_path: /login
+                check_path: /login_check
             fos_facebook:
                 app_url: "http://apps.facebook.com/brunelleschi/"
                 server_url: "http://brunegame.com/p/fb/"
-                login_path: /login
-                check_path: /login_check
+                check_path: /loginFb
                 default_target_path: /
                 provider: my_fos_facebook_provider
             bit_google:
+                check_path: /loginGoogle
                 provider: google
             logout:       true
             anonymous:    true
